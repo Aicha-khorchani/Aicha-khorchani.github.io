@@ -1,0 +1,46 @@
+/* Preloader container */
+body .preloader {
+    height: 100vh; /* Full viewport height */
+    height: calc(var(--vh, 1vh) * 100); /* Handle mobile browser viewport resizing */
+    width: 100%; /* Full width */
+    background: black; /* Ensure background is black */
+    position: fixed; /* Fix to viewport */
+    top: 0; /* Start at top */
+    left: 0;
+    z-index: 50; /* High z-index to ensure it's above all other elements */
+    display: flex; /* Flex for centering */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    overflow: hidden !important; /* Prevent scrollbars */
+    visibility: visible; /* Ensure it's visible by default */
+    opacity: 1; /* Full opacity by default */
+    transition: opacity 1s ease-in-out; /* Smooth fade-out effect */
+}
+
+/* Text container */
+body .preloader .texts-container {
+    display: flex; /* Flexbox for text layout */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    gap: 10px; /* Add spacing between text elements */
+    font-size: 24px; /* Font size */
+    font-weight: 800; /* Bold text */
+    color: white !important; /* Ensure text color is white */
+    opacity: 1; /* Fully visible by default */
+    transition: opacity 1s ease-in-out; /* Smooth fade-in/out */
+}
+.texts-container span {
+    font-size: 2rem; /* Adjust font size */
+    color: white !important; /* Set color to white and use !important to override other rules */
+    transform: translateY(70px); /* Initial transform */
+    opacity: 0; /* Initial opacity */
+    animation: fadeIn 1.5s forwards; /* Apply fade-in animation */
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+    .texts-container {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+}
