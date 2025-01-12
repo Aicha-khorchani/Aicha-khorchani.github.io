@@ -34,7 +34,7 @@ body .preloader .texts-container {
     color: white !important; /* Set color to white and use !important to override other rules */
     transform: translateY(70px); /* Initial transform */
     opacity: 0; /* Initial opacity */
-    animation: fadeIn 1.5s forwards; /* Apply fade-in animation */
+    animation: none /* Apply fade-in animation */
 }
 
 
