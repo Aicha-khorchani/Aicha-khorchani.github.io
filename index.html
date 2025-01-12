@@ -1,0 +1,160 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aicha Khorchani Portfolio</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+        <script src="{% static 'js/script.js' %}"></script>
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">Aicha <span>Khorchani</span></a>
+        
+        <i class='bx bx-menu' id="menu-icon"></i>
+    
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#experience">Education</a>
+            <a href="#education">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="{% static 'images/profile.jpg' %}" alt="Profile Picture">
+        </div>
+        <div class="home-content">
+            <h1>It's <span>Aicha</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>As a passionate developer, I aspire to work as a Django/Python Developer or Full Stack Developer (Django, Python, React) in the fields of ERP, CRM, and beyond.
+                 I am dedicated to continuously learning and evolving in my career, with a keen interest in diving into data analysis and business intelligence (BI) in future roles.
+                 I am committed to enhancing my skills and contributing to innovative projects that drive both personal and professional growth !</p>
+        <div class="social-icons">
+            <a href ="https://www.linkedin.com/in/aicha-khorchani/"><i class='bx bxl-linkedin-square'></i></a>
+            <a href ="https://github.com/Aicha-khorchani"><i class='bx bxl-github' ></i></a>
+            <a href="mailto:aichakhorchani47@gmail.com"><i class='bx bxs-envelope'></i></a>
+            <a href ="https://x.com/khorchani_aicha"><i class='bx bxl-twitter' ></i></a>
+        </div>    
+        <a href="mailto:aichakhorchani47@gmail.com" class="btn">Hire me</a>
+        </div>
+    </section>
+    <section class="experience" id="experience">
+        <div class="experience-content">
+            <h2 class="heading">My <span>Education</span></h2>
+            <h3 class="text-animation">
+                <span></span>
+            </h3>
+            <p>I hold a Master’s degree in Information Systems Engineering (Master Professionnelle en Ingénierie de Système d’Information) and a Bachelor’s degree in Information Systems and Software (Licence en Système d’Information et Logiciel). 
+                Additionally, I have completed a two-year certification in English communication through the Access Program with the American Embassy and a one-week certification in English with More Than Words. I am proficient in French, English, and Arabic.
+                 I also have knowledge of design patterns, have worked in Scrum and Agile environments, and am familiar with using GitHub.</p>
+        <a href="#" class="btn" >Read More</a>
+    </div>
+        <div class="experience-img">
+            <img src="{% static 'images/profile.jpg' %}" alt="Profile Picture"> 
+        </div>
+    </section>
+    <section class="education" id="education">
+     <h2 class="heading"> Experience  </h2>
+     <div class="education-container">
+     <div class="education-box">
+     <div class="education-info">
+          <h4> master degree project</h4>
+          <p>I developed a commercial management module for an ERP system using Python Django MySQL HTML CSS JavaScript  Bootstrap.The app streamlines sales purchases client and lead management,featuring tools for transaction history tracking goods receipt order tracking supplier evaluation and real-time inventory updates.
+            It includes dashboards with interactive analytics to monitor sales trends partner performance and return impacts enabling data-driven decision-making.
+            Additionally the system supports delivery company and driver management with roles for standard users, administrators, and delivery personnel enhancing operational efficiency in logistics and delivery.</p>
+     </div>
+     </div>
+
+     <div class="education-box">
+        <div class="education-info">
+             <h4> bachalorios degree project</h4>
+             <p>I developed a desktop application as part of an ERP system to digitalize the production workflow at NBL.
+                Built with VB.NET the solution centralized processes between the commercial and production department Key features included user authentication with role-based access automatic data entry for repetitive tasks, and dynamic generation of technical file references.
+                It streamlined operations by enabling automatic notifications for file validation managing product categories with team leader permissions and handling account creation deletion and recovery by the administrator.
+                This project showcased my ability to enhance efficiency through software solutions.</p>
+        </div>
+        </div>
+
+        <div class="education-box">
+            <div class="education-info">
+                 <h4> other interships </h4>
+             
+<p>My first internship was at Tunisie Telecom during my first year in IT. I developed a customer satisfaction survey website using PHP, HTML, CSS, and JavaScript. This was my first experience with  developing a complete project, where I learned how to create functional and user-friendly forms while gaining hands-on knowledge in web development.</p>
+            </div>
+            </div>
+            <div class="education-box">
+                <div class="education-info">
+                     <h4> portfolio project</h4>
+                     <p>This portfolio project showcases my skills and expertise as a web developer. You can connect with me through my professional social profiles (GitHub, LinkedIn, email), which are readily available for further engagement. While the website is simple, it is an essential representation of my capabilities and serves as a key part of every web developer's portfolio. I invite you to evaluate my work and connect with me for potential opportunities.</p>
+                </div>
+                </div>
+            
+                <div class="education-box">
+                    <div class="education-info">
+                         <h4> udemy degree  </h4>
+                         <p>I completed a Udemy course in Angular, Spring Boot, and TypeScript, where I worked on developing a complete e-commerce website. While I wouldn't claim to be proficient in these technologies at this stage, I gained valuable experience by contributing to the development of a full project, which enhanced my understanding of these frameworks and technologies.</p>
+                    </div>
+                    </div>
+
+                    <div class="education-box">
+                        <div class="education-info">
+                             <h4> movies project </h4>
+                             
+<p>For my first project, I developed a movie website to practice using a frontend framework, specifically React. I connected the site with a publicly available API to filter and search movies. The site also featured a system for users to add movies to their favorite list and remove them, providing a practical application of these technologies. I am still working on this new feature may be added so check it on my github</p>
+                        </div>
+                        </div>
+
+     </div>
+    </section>
+    <section class="contact" id="contact">
+     <h2 class="heading"> Contact <span>Me</span></h2>
+     <form id="contactForm">
+        <div class="input-box">
+            <input type="text" id="name" name="name" placeholder="Full Name">
+            <input type="email" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="input-box">
+            <input type="number" id="phone" name="phone" placeholder="Phone Number">
+            <input type="text" id="subject" name="subject" placeholder="Subject">
+        </div>
+     
+        <textarea id="message" name="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+      </form>
+      
+    </section>
+  <footer class="footer">
+    <div class="social">
+        <a href ="https://www.linkedin.com/in/aicha-khorchani/"><i class='bx bxl-linkedin-square'></i></a>
+        <a href ="https://github.com/Aicha-khorchani"><i class='bx bxl-github' ></i></a>
+        <a href="mailto:aichakhorchani47@gmail.com"><i class='bx bxs-envelope'></i></a>
+        <a href ="https://x.com/khorchani_aicha"><i class='bx bxl-twitter' ></i></a>
+    </div>    
+    <ul class="list">
+        <li>
+            <a href="#">FAQ</a>
+        </li>
+        <li>
+            <a href="#">Services</a>
+        </li>
+        <li>
+            <a href="#">About Me</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+        <li>
+            <a href="#">Privacy Policy</a>
+        </li>
+    </ul>
+    <p class="copyright"><i class='bx bxs-copyright'></i>Aicha Khorchani | All Rights Reserved  </p>
+</footer>
+</body>
+</html>
