@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-let menuIcon = document.querySelector('menu-icon');
+let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let selections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
