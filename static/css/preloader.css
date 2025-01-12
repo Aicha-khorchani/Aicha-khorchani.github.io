@@ -1,4 +1,14 @@
-/* Preloader container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(70px); /* Start off-screen */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
+
 body .preloader {
     height: 100vh; /* Full viewport height */
     height: calc(var(--vh, 1vh) * 100); /* Handle mobile browser viewport resizing */
@@ -31,10 +41,10 @@ body .preloader .texts-container {
 }
 .texts-container span {
     font-size: 2rem; /* Adjust font size */
-    color: white !important; /* Set color to white and use !important to override other rules */
-    transform: translateY(70px); /* Initial transform */
+    color: white !important; /* Set color to white */
+    transform: translateY(70px); /* Initial position */
     opacity: 0; /* Initial opacity */
-    animation: none /* Apply fade-in animation */
+    animation: fadeIn 1.5s forwards; /* Apply fade-in animation */
 }
 
 
