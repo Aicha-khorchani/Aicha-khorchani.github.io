@@ -58,7 +58,7 @@ if (menuIcon && navbar) {
 
                 },
                 (error) => {
-                    alert("Failed to send message. Please try again.");
+                    alert("Failed to send message. Please try again. the issue is in your brower you need to allow or install certain extension");
                     console.error("EmailJS Error:", error);
                     console.log(templateParams);
 
